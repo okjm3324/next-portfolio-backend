@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGOURL).then(()=>{console.log("DBに接続しま�
 
 
 //サーバを起動
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || PORT,()=>{
   console.log("サーバが起動しました")
 })
 
